@@ -16,7 +16,7 @@ ds = os.getenv("DATASET")
 dataset = pd.read_csv(ds)
 
 x = dataset.drop(columns=["Crop", "Production", "Yield"])  #Using features other than the dropped ones
-y = dataset["Crop"]  # Crop is my target(NOT GROWN OR YIELD REMEMBER!!!)
+y = dataset["Crop"]  # Crop is my target
 
 categorical_features = ["Season", "State"]
 
